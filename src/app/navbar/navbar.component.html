@@ -1,0 +1,26 @@
+<nav class="nav">
+  <a href="#" class="btn__menu__top" (click)="showMenu()" >
+    <i class="fas fa-bars"></i>
+  </a>
+  <a class="branch">Branch</a>
+  <ul class="navbar__list {{estadoList ? 'navbar__list__show' :''}}">
+    <li class="item__list"><a class="item__link">asdad</a></li>
+    <li class="item__list">
+        <a class="item__link" (click)="showSubmenu()" >prueba</a>
+        <ul class="submenu__list {{estado ? 'submenu_show' :''}} " >
+          <li class="submenu__item"><a class="submenu__link">sumenu</a></li>
+          <li class="submenu__item"><a class="submenu__link">sumenu</a></li>
+          <li class="submenu__item"><a class="submenu__link">sumenu</a></li>
+          <li class="submenu__item"><a class="submenu__link">sumenu</a></li>
+        </ul>
+    </li>
+    <li class="item__list"><a class="item__link">asdad</a></li>
+    <li class="item__list"><a class="item__link">asdad</a></li>
+    <li class="item__list"><a class="item__link">asdad</a></li>
+    <li class="item__list"><a class="item__link">asdad</a></li>
+    <li class="item__list"><a class="item__link">asdad</a></li>
+  </ul>
+  <a href="#" (click)="showMenuTop()" class="btn__menu__top">
+    <i class="fas fa-ellipsis-v"></i>
+  </a>
+</nav>

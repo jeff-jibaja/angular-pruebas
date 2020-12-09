@@ -1,0 +1,145 @@
+.container_services{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__services{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  font-size: 1.2em;
+  color: #2C7AE7;
+ text-align: center;
+ display: block;
+}
+
+.subtitle{
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0px auto;
+  padding: 0px auto;
+  text-align: center;
+  display: block;
+}
+
+.container_services{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0px auto;
+}
+
+
+
+.card_service{
+  width: 90%;
+  margin: 2% auto;
+  border: solid 1px rgba(0,0,0, .25);
+  padding: 6px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hover{
+  width: 120px;
+  background: #2C7AE7;
+  height: 150px;
+  position: absolute;
+  left: -120px;
+  bottom: -155px;
+ transition: all 1s ease;
+ border-radius: 50%;
+}
+.card_service:hover .hover{
+  width: 640px;
+  height: 640px;
+  right: 140px;
+  bottom: -80px;
+}
+
+
+.card_service:hover .card_service_header i{
+  background: white;
+  color: #2C7AE7;
+  position: relative;
+  z-index: 1
+}
+.card_service:hover  p{
+  position: relative;
+  color:white;
+  z-index: 1;
+}
+.card_service:hover  h3{
+  position: relative;
+  color:white;
+  z-index: 1;
+}
+.card_service_header{
+  text-align: center;
+
+}
+.card_service_header i{
+  font-size: 34px;
+  background: #2C7AE7;
+  color: white;
+  padding: 22px 32px;
+  border-radius: 50%;
+
+}
+
+
+.card_service_body h3{
+  text-align: center;
+  font-size: 2em;
+  color:#2C7AE7 ;
+}
+.card_service_body p{
+  text-align: center;
+  line-height: 1.2;
+  font-size: 1.3em;
+}
+
+
+@media (min-width: 576px) {
+
+
+}
+
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .card_service{
+    width: 45%;
+  }
+  .container_services{
+
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .card_service{
+    width: 30%;
+  }
+  .hover{
+    width: 120px;
+    left: -100px;
+    bottom: -155px;
+  }
+
+  .hover:hover{
+    width: 700px;
+    height:  700px;
+  }
+
+}
