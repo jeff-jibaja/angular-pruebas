@@ -1,0 +1,24 @@
+<section  class="review">
+  <div class="header__review">
+    <p class="title">{{title}}</p>
+    <h2 class="subtitle">{{subtitle }}</h2>
+   </div>
+   <div class="container_reviews">
+    <div *ngFor="let team of data" class="card_review">
+      <div class="card_review_header">
+        <img class="avatar__cliente" src="https://ui-avatars.com/api/?name={{team.name}}" alt="description card1">
+        <div class="description__cliente">
+          <h3>{{team.name}}</h3>
+          <span>{{team.rol}}</span>
+        </div>
+      </div>
+      <div class="card_review_body">
+        {{team.abstract}}
+      </div>
+      <div class="footer_review">
+        <a class="btn_ancla">Ver más</a>
+      </div>
+    </div>
+   </div>
+
+</section>

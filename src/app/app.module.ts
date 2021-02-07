@@ -12,6 +12,9 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { NavTopComponent } from './nav-top/nav-top.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ReviewComponent } from './review/review.component';
+import { DataTeamComponent } from './data-team/data-team.component';
+import { TeamComponent } from './team/team.component';
+import { DataReviewComponent } from './data-review/data-review.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ReviewComponent } from './review/review.component';
     PortfolioComponent,
     NavTopComponent,
     NavbarComponent,
-    ReviewComponent
+    ReviewComponent,
+    DataTeamComponent,
+    TeamComponent,
+    DataReviewComponent
   ],
   imports: [
     BrowserModule,
